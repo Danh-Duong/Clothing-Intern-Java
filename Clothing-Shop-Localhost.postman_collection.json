@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "48a8d14c-84b0-405d-850e-6593515b5605",
+		"name": "Clothing-Shop-Localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20162988"
+	},
+	"item": [
+		{
+			"name": "Get Filter Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products?categoryId=C01&size=XL",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "categoryId",
+							"value": "C01"
+						},
+						{
+							"key": "size",
+							"value": "XL"
+						},
+						{
+							"key": "color",
+							"value": "Black",
+							"disabled": true
+						},
+						{
+							"key": "style",
+							"value": "Morden",
+							"disabled": true
+						},
+						{
+							"key": "minPrice",
+							"value": "30",
+							"disabled": true
+						},
+						{
+							"key": "maxPrice",
+							"value": "100",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Detail Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/CT001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"CT001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categories",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
